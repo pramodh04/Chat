@@ -15,7 +15,7 @@ useEffect(()=>{
         setdata(doc.data());
     });
     return ()=> unsub()
-},[])
+})
     return <div className={`user ${chat.name === user.name && 'selecteduser'}`} onClick={()=>[getuser(user),setscreen(true)]}>
       <div className="user-info">
           <div className="user-details">
