@@ -7,7 +7,7 @@ import Img from "../avatar.png"
 const User = (props) =>{
 const {user,getuser,user1,chat,setscreen} = props;
 const user2 =user?.uid;
-const [data,setdata] = useState('');
+const [data,setdata] = useState(null);
 const id = user1 > user2 ? `${user1+user2}`:`${user2+user1}`
 useEffect(()=>{
     
